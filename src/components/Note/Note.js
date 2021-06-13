@@ -16,16 +16,23 @@ const Note = ({ id, text, date }) => {
           <small>{date}</small>
         </div>
         <div className={styles.iconsFooter}>
-          <MdEdit
-            className={styles.icon}
-            onClick={() => dispatch(editNote({ id, state: true }))}
-            size="1.3em"
-          />
-          <MdDeleteForever
-            className={styles.icon}
-            onClick={() => dispatch(deleteNote({ id }))}
-            size="1.3em"
-          />
+          <div className={styles.tooltip}>
+            <MdEdit
+              className={styles.icon}
+              onClick={() => dispatch(editNote({ id, state: true }))}
+              size="1.3em"
+            />
+            <span className={styles.tooltiptext}>Edit</span>
+          </div>
+
+          <div className={styles.tooltip}>
+            <MdDeleteForever
+              className={styles.icon}
+              onClick={() => dispatch(deleteNote({ id }))}
+              size="1.3em"
+            />
+            <span className={styles.tooltiptext}>Delete</span>
+          </div>
         </div>
       </div>
     </div>
