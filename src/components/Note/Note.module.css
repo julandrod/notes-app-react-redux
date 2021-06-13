@@ -1,0 +1,31 @@
+.note{
+    background-color: #fef68a;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    white-space: pre-wrap;
+}
+
+.noteFooter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateFooter{
+    display: flex;
+    flex: 3;
+}
+
+.iconsFooter{
+    display: flex;
+    flex: 1;
+    justify-content:space-between;
+}
+
+.icon{
+    cursor: pointer;
+}
