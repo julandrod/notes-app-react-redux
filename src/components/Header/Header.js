@@ -1,11 +1,12 @@
 import React from "react";
-import { useDispatch } from "react-redux";
-import { toogleDarkMode } from "../../features/notesSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { selectDarkMode, toogleDarkMode } from "../../features/notesSlice";
 
 import styles from "./Header.module.css";
 
 const Header = () => {
   const dispatch = useDispatch();
+  const darkMode = useSelector(selectDarkMode);
 
   return (
     <div className={styles.header}>
@@ -14,7 +15,7 @@ const Header = () => {
         className={styles.save}
         onClick={() => dispatch(toogleDarkMode())}
       >
-        Toggle Mode
+        {!darkMode ? 'Dark Mode' : 'Light Mode'}
       </button>
     </div>
   );
