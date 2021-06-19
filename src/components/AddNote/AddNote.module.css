@@ -1,39 +1,42 @@
-.noteNew{
-    background-color: #67d7cc;
-    border-radius: 10px;
-	padding: 1rem;
-	min-height: 170px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	white-space: pre-wrap;
-    box-shadow: 4px 8px 4px grey;
+.noteNew {
+  background-color: #67d7cc;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
 }
 
-.noteNew textarea{
-    border: none;
-    resize: none;
-    background-color: #67d7cc;
+.noteNew:hover {
+  box-shadow: 4px 8px 4px grey;
 }
 
-.noteNew textarea:focus{
-    outline: none;
+.noteNew textarea {
+  border: none;
+  resize: none;
+  background-color: #67d7cc;
 }
 
-.save{
-    background-color: #e1e1e1;
-    border: none;
-    border-radius: 15px;
-    padding: 5px 10px 5px 10px;
+.noteNew textarea:focus {
+  outline: none;
 }
 
-.save:hover{
-    background-color: #ededed;
-    cursor: pointer;
+.save {
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
 }
 
-.noteFooter{
-    display: flex;
-	align-items: center;
-	justify-content: space-between;
+.save:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.noteFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
